@@ -29,9 +29,18 @@
 <div>
   <ul>
     <li *ngFor="let user of users">
-        <div>Nombre: {{user.name}}</div>
-        <div>Edad: {{user.age}}</div>
-        <div>Soltero: {{user.isSingle ? 'Si' : 'No'}}</div>
+      <div>Nombre: {{user.name}}</div>
+      <div>Edad: {{user.age}}</div>
+      <div>Soltero: {{user.isSingle ? 'Si' : 'No'}}</div>
+      <div>
+        image: {{user.avatar}}
+        <img
+          [src]="user.avatar"
+          alt=""
+          style="width: 20%;">
+      </div>
     </li>
   </ul>
 </div>
+
+<app-product-list></app-product-list>

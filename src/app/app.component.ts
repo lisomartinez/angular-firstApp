@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 interface User {
-  name: string,
-  age: number,
-  isSingle: boolean
+  name: string;
+  age: number;
+  isSingle: boolean;
+  avatar: string;
 }
 
 @Component({
@@ -16,13 +17,14 @@ export class AppComponent {
   rockbandName: string;
   rockbands: string[];
   users: User[];
-
   constructor() {
+
     this.rockbands = ['kiss', 'AC/DC', 'Aerosmith'];
-    this.users = [ {
+    this.users = [{
       name: 'Lisandro',
-      age: '20',
-      isSingle: true
+      age: 20,
+      isSingle: true,
+      avatar: ''
     }];
   }
 
